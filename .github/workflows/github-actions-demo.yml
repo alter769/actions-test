@@ -24,7 +24,7 @@ jobs:
     needs: [Build]
     environment:
       name: DEV
-      url: 'http://dev.api.copeland.com'
+      url: 'http://dev-api.copeland.com'
     steps:
       - name: Deploy to DEV
         run: echo Deploying to DEV environment...
@@ -37,7 +37,7 @@ jobs:
     needs: [DeployDev]
     environment:
       name: SIT
-      url: 'http://sit.api.copeland.com'
+      url: 'http://sit-api.copeland.com'
     steps:
       - name: Deploy to SIT
         run: echo Deploying to SIT environment...
