@@ -1,9 +1,9 @@
 name: GitHub Actions Demo
-#run-name: ${{ github.actor }} is testing out GitHub Actions
+#run-name: ${{ github.event.repository.name }}
 on: [push]
 jobs:
   call-common-workflow:
-    name: ->
+    name: ${{ github.event.repository.name }}
     uses: alter769/common-pipeline/.github/workflows/common-pipeline.yml@main
 #    uses: alter769/common-pipeline/.github/workflows/common-pipeline.yml
 
