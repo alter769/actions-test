@@ -3,6 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions
 on: [push]
 jobs:
   Build:
+    name: Build from develop branch
     runs-on: ubuntu-latest
     steps:
       - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
@@ -26,5 +27,5 @@ jobs:
       url: 'http://dev.api.copeland.com'
     steps:
       - name: Deploy to DEV
-      - run: echo Deploying to DEV environment...
+        run: echo Deploying to DEV environment...
       - run: echo "This job's status is ${{ job.status }}."
