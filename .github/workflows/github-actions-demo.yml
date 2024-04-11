@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actionss
 on: [push]
 jobs:
   call-common-workflow:
-    name: ""
+    name: .
     uses: alter769/common-pipeline/.github/workflows/common-pipeline.yml@main
 #    uses: alter769/common-pipeline/.github/workflows/common-pipeline.yml
 
