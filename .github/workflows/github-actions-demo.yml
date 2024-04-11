@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-#run-name: ${{ github.event.repository.name }} x
+#run-name: ${{ github.event.repository.name }} xs
 on: [push]
 jobs:
   call-common-workflow:
