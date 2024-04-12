@@ -1,0 +1,12 @@
+name: GitHub Actions Demo
+#run-name: ${{ github.event.repository.name }} xs
+on: [push]
+permissions: write-all
+jobs:
+  call-common-workflow:
+    name: ${{ github.event.repository.name }}
+    uses: alter769/common-pipeline/.github/workflows/common-pipeline.yml@main
+
+
+ 
+ 
